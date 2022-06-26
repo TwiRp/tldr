@@ -8,7 +8,8 @@ $(document).ready(function () {
             type: "POST",
             data: JSON.stringify({
                 text: text,
-                sentences: sentences
+                sentences: sentences,
+                shorten: true
             }),
             contentType: "application/json",
             dataType: "json",
