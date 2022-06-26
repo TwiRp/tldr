@@ -9,6 +9,7 @@ If knowledge is power, and time is valuable, then TL;DR is powerfully valuable.
 ## Tech
 
 Using NaturalNode's [natural](https://github.com/NaturalNode/natural) and [sylvester](https://github.com/NaturalNode/node-sylvester).
+Improving with [gramma](https://caderek.github.io/gramma/) and [LanguageTool](https://languagetool.org).
 Running on [Express](https://expressjs.com/) with [ejs](https://ejs.co/).
 
 ## More
