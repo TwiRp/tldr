@@ -1,0 +1,64 @@
+<%- include('header', {title: "TL;DR: Automated summaries for people who lack time"}) %>
+<div class="jumbotron tldr-colour">
+    <div class="container">
+        <h1>TL;DR: Automated Summaries</h1>
+        <p>Like being in the know but not spending all that time reading to be in the know? TL;DR: Automated Summaries can help!</p>
+        <p>TL;DR takes all of the important stuff out of those drawn out novels you're trying to read. Simply feed it the content and how much you want to know, and it'll spit out all you need to know. Ya know?</p>
+        <p>If knowledge is power, and time is valuable, then TL;DR is powerfully valuable.</p>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Try It!</h1>
+    <div class="row">
+        <div class="col-md-6 panel panel-default">
+            <textarea id="story" class="form-control">
+Following the Battle of New York in 2012, Adrian Toomes and his salvage company are contracted to clean up the city, but their operation is taken over by the Department of Damage Control (DODC), a partnership between Tony Stark and the U.S. government. Enraged at being driven out of business, Toomes persuades his employees to keep the Chitauri technology they have already scavenged and use it to create and sell advanced weapons, including a flying Vulture suit Toomes uses to steal Chitauri power cells.
+
+Eight years later, Peter Parker is drafted into the Avengers by Stark to help with an internal dispute in Berlin,[N 3] but resumes his studies at the Midtown School of Science and Technology when Stark tells him he is not yet ready to become a full Avenger. Parker quits his school's academic decathlon team to spend more time focusing on his crime-fighting activities as Spider-Man. His best friend, Ned, eventually discovers his secret identity.
+
+Parker comes across Toomes' associates Jackson Brice / Shocker and Herman Schultz selling weapons to local criminal Aaron Davis. Parker saves Davis before being caught by Toomes in the Vulture suit and dropped in a lake, nearly drowning after becoming tangled in a parachute built into his suit. He is rescued by Stark, who is monitoring the Spider-Man suit he gave Parker and warns him against further involvement with the criminals. Toomes accidentally kills Brice with one of their weapons and Schultz becomes the new Shocker.
+
+Parker and Ned study a weapon Brice left behind, removing its power core. When a tracking device on Schultz leads to Maryland, Parker rejoins the decathlon team and accompanies them to Washington, D.C. for their national tournament. Ned and Parker disable the tracker Stark implanted in the Spider-Man suit, and unlock its advanced features. Parker tries to stop Toomes from stealing weapons from a DODC truck but is trapped inside, causing him to miss the decathlon tournament. When he discovers that the power core is an unstable Chitauri grenade, he races to the Washington Monument, where the core explodes and traps Ned and their friends in an elevator. Parker saves them, including his classmate and crush Liz. Days later, in New York City, aboard the Staten Island Ferry, Parker captures Toomes' new buyer Mac Gargan but Toomes escapes and a malfunctioning weapon tears the ferry in half. Stark helps Parker save the passengers and confiscates his suit as punishment for his recklessness.
+
+Parker returns to his high school life, and asks Liz to go to the homecoming dance with him. On the night of the dance, he discovers that Toomes is Liz's father. Deducing Parker's secret identity, Toomes threatens him. Parker realizes Toomes is planning to hijack a DODC plane transporting weapons from Avengers Tower to the team's new headquarters. He leaves the dance, dons his old homemade Spider-Man suit, and races to Toomes' lair. Though he is ambushed outside by Schultz, he defeats him with Ned's help. Inside, Toomes attacks Parker, destroying the building's support columns, and leaves Parker to die, trapped in the rubble of the collapsed building. Parker escapes and intercepts the plane, steering it to crash on the beach near Coney Island. He and Toomes continue fighting, ending with Parker saving Toomes' life after the damaged Vulture suit explodes. Parker leaves Toomes for the police along with the plane's cargo. After her father's arrest, Liz moves away. Parker declines an invitation from Stark to join the Avengers full-time, and Stark proposes to Pepper Potts. Stark also returns the Spider-Man suit to Parker, who puts it on just as his aunt May walks in.
+
+In a mid-credits scene, an incarcerated Gargan approaches Toomes in prison, saying he has heard that the latter knows Spider-Man's real identity. Toomes denies this.
+            </textarea>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label>Sentences&nbsp;</label>
+                    <select id="sentences" class="form-control" style="float: left;">
+                        <option>10</option>
+                        <option>7</option>
+                        <option selected>5</option>
+                        <option>3</option>
+                        <option>1</option>
+                    </select>
+                </div>&nbsp;
+                <button id="clear" type="button" class="btn btn-danger">Clear</button>
+                &nbsp;
+                <button id="send" type="button" class="btn btn-success">Summarize</button>
+            </div>
+        </div>
+        <div class="col-md-6 panel panel-default">
+            <p id="the-summary"></p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <br /><br />
+    <h2>Technologies</h2>
+    <p>
+        Written in <a href="https://nodejs.org">nodejs</a>.
+        Using NaturalNode's <a href="https://github.com/NaturalNode/natural">natural</a> and <a href="https://github.com/NaturalNode/node-sylvester">sylvester</a>.
+        Running on <a href="https://expressjs.com/">Express</a> with <a href="https://ejs.co/">ejs</a>.
+    </p>
+    <p>
+        Server powered by <a href="https://www.linode.com/">Linode</a>. Built for <a href="https://hashnode.com/">Hashnode</a>'s Hackathon.
+    </p>
+    <br /><br />
+</div>
+<script src="/js/index.js"></script>
+<%- include('footer') %>

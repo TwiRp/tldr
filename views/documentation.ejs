@@ -1,0 +1,56 @@
+<%- include('header', {title: "TL;DR: Automated summaries for people who lack time"}) %>
+<div class="jumbotron tldr-colour">
+    <div class="container">
+        <h1>TL;DR: This is easy</h1>
+        <p>Simple REST API.</p>
+    </div>
+</div>
+
+<div class="container">
+    <br /><br />
+    <h2>Usage</h2>
+    <p>We only have a single API endpoint. https://tldr.kmw.moe/api/summarize</p>
+    <br />
+    <div class="card box-shadow blog-entry">
+        <div class="card-header">
+            <p><span class="btn btn-success">POST</span> &mdash; <strong>https://tldr.kmw.moe/api/summarize</strong></p>
+        </div>
+        <div class="card-body">
+            <div class="card bg-light">
+                <div class="card-header">Query Parameters</div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>text</strong> <em>(Required)</em> &mdash;
+                        <strong>string</strong> &mdash;
+                        Text to summarize. Works best if markdown and HTML is removed before sending.
+                    </p>
+                    <p class="card-text">
+                        <strong>sentences</strong> <em>(Optional)</em> &mdash;
+                        <strong>int</strong> &mdash;
+                        Number of sentences to summarize to. Defaults to 5.
+                    </p>
+                </div>
+              </div>
+        </div>
+
+        <div class="card-body">
+            <div class="card bg-light">
+                <div class="card-header">Reponse</div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>status</strong> &mdash;
+                        <strong>string</strong> &mdash;
+                        <code>SUCCESS</code> when a summary could be generated. <code>FAILURE</code> if a summary could not be generated.
+                    </p>
+                    <p class="card-text">
+                        <strong>summary</strong> &mdash;
+                        <strong>string</strong> &mdash;
+                        The text summarized to the number of requested sentences.
+                    </p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <br /><br />
+</div>
+<%- include('footer') %>

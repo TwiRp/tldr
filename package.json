@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "body-parser": "^1.20.0",
+    "debug": "^4.3.4",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "graphql-request": "^4.3.0",
+    "natural": "^5.2.2",
+    "sylvester": "^0.0.21",
+    "tailwindcss": "^3.1.4"
+  },
+  "name": "tldr",
+  "version": "1.0.0",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "kmw",
+  "license": "MIT",
+  "description": ""
+}
