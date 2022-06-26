@@ -37,7 +37,7 @@ $(document).ready(function () {
         const body = await response.json();
         const post = body.data.post;
         const text = post.contentMarkdown;
-        const sentences = 5;
+        const sentences = 3;
         console.log(post.title);
         $.ajax({
             url: "/api/summarize",
