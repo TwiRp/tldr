@@ -45,7 +45,7 @@ $(document).ready(function () {
             data: JSON.stringify({
                 text: text,
                 sentences: sentences,
-                shorten: true
+                shorten: false
             }),
             contentType: "application/json",
             dataType: "json",
