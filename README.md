@@ -25,6 +25,8 @@ npm start
 
 Head to http://localhost:3000 and start saving time.
 
+[PM2](https://pm2.keymetrics.io) can be used to run and monitor both TL;DR and Language Tool.
+
 
 ## More
 
