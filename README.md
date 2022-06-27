@@ -12,6 +12,20 @@ Using NaturalNode's [natural](https://github.com/NaturalNode/natural) and [sylve
 Improving with [gramma](https://caderek.github.io/gramma/) and [LanguageTool](https://languagetool.org).
 Running on [Express](https://expressjs.com/) with [ejs](https://ejs.co/).
 
+## Setup
+
+Run [Language Tool on 8081](https://dev.languagetool.org/http-server.html).
+
+```bash
+git clone https://github.com/TwiRp/tldr.git
+cd tldr
+npm install
+npm start
+```
+
+Head to http://localhost:3000 and start saving time.
+
+
 ## More
 
 Server powered by [Linode](https://www.linode.com/). Built for [Hashnode](https://hashnode.com/)'s [Hackathon](https://townhall.hashnode.com/build-with-linode-hackathon-june-2022?source=hashnode_countdown).
