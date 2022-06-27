@@ -27,7 +27,6 @@ Head to http://localhost:3000 and start saving time.
 
 [PM2](https://pm2.keymetrics.io) can be used to run and monitor both TL;DR and Language Tool.
 
-
 ## More
 
 Server powered by [Linode](https://www.linode.com/). Built for [Hashnode](https://hashnode.com/)'s [Hackathon](https://townhall.hashnode.com/build-with-linode-hackathon-june-2022?source=hashnode_countdown).
